@@ -242,3 +242,50 @@ section:nth-child(even) {
   justify-content: center;
   max-width: 100%;
 }
+
+/* /////////////////////// */
+/* Gallery Section */
+/* ////////////////////// */
+
+.gallery-header {
+  color: #fff;
+  font-size: 6.2rem;
+  margin: 0 auto;
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  padding: 8rem;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+  padding: 3.2rem 0;
+  margin: 0 auto;
+  max-width: 140rem;
+}
+
+.gallery-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+  overflow: hidden;
+}
+
+.gallery-image {
+  max-width: 100%;
+  transition: all 0.3s;
+}
+
+.image-holder {
+  overflow: hidden;
+}
+.gallery-image:hover {
+  scale: 1.1;
+  cursor: pointer;
+}

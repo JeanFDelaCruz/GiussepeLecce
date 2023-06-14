@@ -26,6 +26,7 @@
 .container {
   padding: 6.4rem 4.8rem;
   margin: 0 auto;
+  margin-bottom: 12rem;
   max-width: 100%;
 }
 
@@ -37,15 +38,28 @@
   padding-right: 100rem;
 }
 
-.section-header {
+.section-header-light {
   font-size: 3.2rem;
   line-height: 1.2;
 }
 
-.section-subheader {
+.section-subheader-light {
   font-size: 2.4rem;
   letter-spacing: 0.3rem;
 }
+
+.section-header-dark {
+  color: #fff;
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+.section-subheader-dark {
+  color: #fff;
+  font-size: 2.4rem;
+  letter-spacing: 0.3rem;
+}
+
 /* grids */
 
 .grid-column-1 {
