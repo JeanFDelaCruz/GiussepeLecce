@@ -20,6 +20,7 @@
 .btn:hover,
 .btn:active {
   background-color: #fff;
+  border-inline: 0.2rem solid #000;
   color: #000;
 }
 
