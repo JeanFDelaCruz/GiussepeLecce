@@ -340,8 +340,9 @@ section:nth-child(even) {
 /* Gallery Section */
 /* ////////////////////// */
 
-/* .section-price {
-} */
+.section-price {
+  row-gap: 4.8rem;
+}
 
 .header-container-price {
   display: inline-block;
@@ -430,4 +431,90 @@ section:nth-child(even) {
   font-size: 1.6rem;
   color: green;
   padding-right: 1rem;
+}
+
+/* Testimonials */
+
+.slider {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80rem;
+  height: 24rem;
+  padding: 4.8rem;
+  line-height: 3.2rem;
+
+  border-radius: 2rem;
+  /* box-shadow: 0 0.1rem 1rem #333; */
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2.4rem;
+
+  position: absolute;
+}
+
+.slide-header {
+  font-size: 3rem;
+  padding-bottom: 1.6rem;
+}
+
+.slide-comment {
+  padding: 1.6rem 0;
+  line-height: 3.2rem;
+  font-size: 2rem;
+}
+
+.quotes {
+  color: gold;
+  font-size: 5.2rem;
+}
+
+.author {
+  font-size: 1.8rem;
+  text-align: end;
+}
+
+/* slider testimonial buttons */
+
+.slider-button,
+.slider-button:link,
+.slier-button:visited {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0.1rem 1.2rem #333;
+
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.slider-button:hover,
+.slider-button:active {
+  background-color: #000;
+  color: #fff;
+}
+
+.slider-testimonial-icon {
+  font-size: 4.8rem;
+}
+
+.button-next {
+  right: 0;
+  top: 50%;
+  transform: translateX(100%);
+  /* transform: translateY(50%); */
+}
+
+.button-prev {
+  left: 0;
+  top: 50%;
+  transform: translateX(-100%);
 }
