@@ -579,10 +579,6 @@ section:nth-child(even) {
   list-style: none;
 }
 
-.cta-socials {
-  /* text-decoration: none; */
-}
-
 .cta-icons,
 .cta-icons:link,
 .cta-icons:visited {
@@ -602,5 +598,24 @@ section:nth-child(even) {
 }
 
 /* /////////////////////// */
-/* Footer */
+/* Footer Section*/
 /* ////////////////////// */
+
+.footer-section {
+  border-top: solid 0.1rem #fff;
+}
+
+.footer-container {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 4.8rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.6rem;
+}
