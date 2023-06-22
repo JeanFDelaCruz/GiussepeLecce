@@ -253,8 +253,6 @@ section:nth-child(even) {
 /* ////////////////////// */
 
 .biography {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   column-gap: 4.8rem;
   row-gap: 9.6rem;
   padding: 3.2rem 0;
