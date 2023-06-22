@@ -115,89 +115,137 @@ section:nth-child(even) {
 
 /* Section-hero */
 .section-hero {
-  /* background-color: blue; */
-  max-width: 180rem;
-  max-height: 85rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-self: center;
-  padding: 3.6rem 0;
-  margin-bottom: 4.8rem;
+  /* background-color: orange; */
 }
 
-.hero-image-container {
-  max-width: 60rem;
+.hero-container {
   margin: 0 auto;
-  grid-column: 1 / 2;
-  grid-row: 1 / 1;
+  max-width: 140rem;
+  height: 85rem;
+  padding: 6.4rem;
+}
+
+/* hero texts */
+
+.hero-header-container {
+  padding: 4.8rem;
+
   display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  justify-content: center;
+
+  color: #fff;
+}
+
+.business-name {
+  font-size: 1.6rem;
+  color: gold;
+}
+
+.hero-main-header {
+  font-size: 5.2rem;
+}
+
+/* hero button container */
+
+.hero-button-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4.8rem 0;
+}
+
+.hero-button,
+.hero-button:link,
+.hero-button:visited {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 300;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2.4rem;
+  border-inline: 0.1rem solid #fff;
+  transition: all 0.3s;
+}
+
+/* hero main button */
+.hero-button:hover,
+.hero-button:active {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.hero-main-button,
+.hero-main-button:link,
+.hero-main-button:visited {
+  font-weight: 600;
+  background-color: #fff;
+  color: #000;
+}
+
+.hero-main-button:hover,
+.hero-main-button:active {
+  background-color: #e6e6e6;
+}
+
+/* related hero section */
+
+.related-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.hero-list-container {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.hero-lists {
+  max-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.related-image {
+  width: 100%;
+}
+
+.related-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* HERO IMAGES */
+
+.hero-image-container {
+  padding: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  background-color: blue;
+}
+
+.hero-image-list-container {
+  position: absolute;
+
+  list-style: none;
+}
+
+.hero-image-lists {
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .hero-image {
   width: 100%;
-}
-
-/* .image-active {
-  position: absolute;
-  top: 20%;
-  left: 100%;
-} */
-
-/* HERO PAGINATION */
-.pagination {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 2rem;
-}
-
-.hero-texts {
-  color: #fff;
-  font-size: 4.8rem;
-}
-
-.pagination-line-container {
-  display: flex;
-  gap: 2.4rem;
-  list-style: none;
-  align-items: center;
-  margin-left: 10rem;
-}
-
-.pagination-lines {
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: #fff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* For current active slide */
-.active {
-  background-color: #ffd700;
-}
-
-/* HERO BUTTONS */
-.btn-slider {
-  font-size: 4.8rem;
-  /* position: absolute; */
-  color: #fff;
-  cursor: pointer;
-}
-
-.btn-slider-prev {
-  position: absolute;
-  top: 50%;
-  right: 70%;
-}
-
-.btn-slider-next {
-  position: absolute;
-  top: 50%;
-  left: 70%;
 }
 
 /* /////////////////////// */
@@ -554,10 +602,9 @@ section:nth-child(even) {
   padding: 3.2rem 6.4rem;
   font-size: 2.4rem;
   border-radius: 2.4rem;
-  border-inline: solid 0.2rem #fff;
 
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   font-weight: 600;
 
   cursor: pointer;
@@ -566,8 +613,9 @@ section:nth-child(even) {
 
 .cta-button:hover,
 .cta-button:active {
-  color: #000;
-  background-color: #fff;
+  background-color: #000;
+  color: #fff;
+  border-inline: solid 0.2rem #fff;
 }
 
 .cta-social-container {

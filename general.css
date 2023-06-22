@@ -63,6 +63,10 @@
 
 /* grids */
 
+.grid {
+  display: grid;
+}
+
 .grid-column-1 {
   display: grid;
   grid-column: 1fr;
@@ -72,7 +76,9 @@
 
 .grid-column-2 {
   display: grid;
-  grid-column: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-self: center;
 }
 
 .grid-column-3 {
