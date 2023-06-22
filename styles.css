@@ -229,19 +229,23 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
+
   position: relative;
-  background-color: blue;
+  max-width: 60rem;
 }
 
 .hero-image-list-container {
-  position: absolute;
-
   list-style: none;
+  top: 0;
+  left: 0;
+}
+
+.hero-slider-images-container {
+  position: absolute;
+  max-width: 60rem;
 }
 
 .hero-image-lists {
-  overflow: hidden;
-  max-width: 100%;
 }
 
 .hero-image {
