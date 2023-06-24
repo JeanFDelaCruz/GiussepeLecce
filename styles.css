@@ -11,18 +11,20 @@ Calculating rem
 font-size: 10px;
 10px / 16px = 0.625 = 62.5%
 
+
+
 -- 02 Colors
 
 Primary   #fff
 secondary #000
-tertiary  #4c4c4c
+tertiary  #4c4c4c / Gold
 
-backgrounds
-01--- 
-02--- 
-03--- 
-04--- 
-05--- 
+Tints:
+
+tints for Texts on white background
+
+#1a1a1a 
+
 
 // Font family for sub headers
 font-family: 'Lobster', cursive;
@@ -114,9 +116,6 @@ section:nth-child(even) {
 }
 
 /* Section-hero */
-.section-hero {
-  /* background-color: orange; */
-}
 
 .hero-container {
   margin: 0 auto;
@@ -245,9 +244,6 @@ section:nth-child(even) {
   max-width: 60rem;
 }
 
-.hero-image-lists {
-}
-
 .hero-image {
   width: 100%;
 }
@@ -257,26 +253,28 @@ section:nth-child(even) {
 /* ////////////////////// */
 
 .biography {
-  column-gap: 4.8rem;
-  row-gap: 9.6rem;
-  padding: 3.2rem 0;
-  margin: 0 auto;
-  max-width: 140rem;
+  padding: 4.8rem;
+  row-gap: 2.4rem;
+  /* background-color: orangered; */
 }
 
 .biography-text {
   align-self: center;
   justify-content: center;
-  font-size: 3.2rem;
-  padding: 3.2rem 2.4rem;
+  font-size: 2.4rem;
+  /* padding: 3.2rem 2.4rem; */
+  padding: 2.4rem;
+  color: #1a1a1a;
 }
 
 .biography-image-container {
-  max-width: 36rem;
+  /* max-width: 36rem; */
+  max-width: 32rem;
   background-color: #000;
   justify-self: center;
   align-self: center;
   position: relative;
+  background-color: #fff;
 }
 .biography-image::before {
   content: "";
@@ -298,17 +296,11 @@ section:nth-child(even) {
 /* Gallery Section */
 /* ////////////////////// */
 
-.header-container-gallery {
-  display: inline-block;
-  padding: 4.8rem;
-  margin: 0 auto;
-  max-width: 180rem;
-  padding-right: 144rem;
-}
-
 .gallery-main-container {
   display: grid;
   row-gap: 9.6rem;
+
+  padding-bottom: 4.8rem;
 }
 
 .gallery-header {
@@ -316,32 +308,20 @@ section:nth-child(even) {
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 6.2rem;
+  font-size: 4.4rem;
   margin: 0 auto;
   font-weight: 600;
   letter-spacing: 0.6rem;
   text-transform: uppercase;
   padding: 5rem;
-  /* background-color: blue; */
-}
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 4.8rem;
-  row-gap: 9.6rem;
-  padding: 3.2rem 0;
-  margin: 0 auto;
-  max-width: 140rem;
 }
 
 .gallery-image-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 4.8rem;
-  row-gap: 9.6rem;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
   overflow: hidden;
 }
 
@@ -361,7 +341,7 @@ section:nth-child(even) {
 /* Gallery Button */
 .btn-gallery,
 .btn-gallery:link,
-.btn .btn-gallery:visited {
+.btn-gallery:visited {
   display: inline-block;
 
   grid-column: 2;
@@ -370,6 +350,7 @@ section:nth-child(even) {
   font-size: 2.4rem;
   font-weight: 500;
   color: #fff;
+  background-color: #000;
   text-align: center;
   /* text-transform: uppercase; */
 
@@ -387,7 +368,7 @@ section:nth-child(even) {
 }
 
 /* /////////////////////// */
-/* Gallery Section */
+/* Price Section */
 /* ////////////////////// */
 
 .section-price {
@@ -402,13 +383,12 @@ section:nth-child(even) {
 }
 
 .card-container {
-  max-width: 144rem;
-  margin: 0 auto;
+  /* background-color: orangered; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-self: center;
-  column-gap: 24rem;
+  column-gap: 4.8rem;
 }
 .card-holder {
   display: grid;
@@ -656,7 +636,7 @@ section:nth-child(even) {
 }
 
 .footer-container {
-  max-width: 144rem;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
