@@ -21,10 +21,11 @@ tertiary  #4c4c4c / Gold
 
 Tints:
 
-tints for Texts on white background
+-tints for Texts on white background
+-#1a1a1a 
 
-#1a1a1a 
-
+-tints for texts on black background
+-#e6e6e6
 
 // Font family for sub headers
 font-family: 'Lobster', cursive;
@@ -213,6 +214,7 @@ section:nth-child(even) {
 
 .related-image {
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 .related-text {
@@ -246,6 +248,28 @@ section:nth-child(even) {
 
 .hero-image {
   width: 100%;
+  border-radius: 0.5rem;
+}
+
+.hero-list-button,
+.hero-list-button:link,
+.hero-list-button:visited {
+  display: inline-block;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-list-button:hover,
+.hero-list-button:active {
+  scale: 1.1;
+}
+
+.hero-active {
+  scale: 1.1;
+  transition: all 0.3s;
 }
 
 /* social nav bar */
@@ -297,20 +321,12 @@ section:nth-child(even) {
   position: relative;
   background-color: #fff;
 }
-.biography-image::before {
-  content: "";
-  display: block;
-  width: 60%;
-  background-color: #ffd700;
-  border-radius: 50%;
-  z-index: 1;
 
-  position: absolute;
-}
 .biography-image {
   align-self: center;
   justify-content: center;
   max-width: 100%;
+  border-radius: 0.5rem;
 }
 
 /* /////////////////////// */
@@ -351,12 +367,13 @@ section:nth-child(even) {
   transition: all 0.3s;
 }
 
-.image-holder {
-  overflow: hidden;
-}
 .gallery-image:hover {
   scale: 1.1;
   cursor: pointer;
+}
+.image-holder {
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 /* Gallery Button */
@@ -518,16 +535,19 @@ section:nth-child(even) {
   padding: 1.6rem 0;
   line-height: 3.2rem;
   font-size: 2rem;
+  color: #1a1a1a;
 }
 
 .quotes {
   color: gold;
   font-size: 5.2rem;
+  color: #1a1a1a;
 }
 
 .author {
   font-size: 1.8rem;
   text-align: end;
+  color: #1a1a1a;
 }
 
 /* slider testimonial buttons */
@@ -662,7 +682,7 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #e6e6e6;
   padding: 4.8rem;
 }
 
