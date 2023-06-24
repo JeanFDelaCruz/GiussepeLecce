@@ -26,17 +26,21 @@
     ></script>
   </head>
   <body>
+
+
+
+
     <header class="header grid-nav">
       <nav class="nav-container">
         <ul class="nav-list-container">
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#product">Portraits</a>
+            <a class="main-nav-link" href="#portrait">Portraits</a>
           </li>
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#">Events</a>
+            <a class="main-nav-link" href="#event">Events</a>
           </li>
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#">Products</a>
+            <a class="main-nav-link" href="#product">Products</a>
           </li>
         </ul>
 
@@ -44,39 +48,30 @@
           <a class="logo-image-anchor" href="#"><img class="logo-image" src="Logo/name-1.png" /></a>
         </div>
 
+        
+
         <ul class="nav-list-container">
           <li class="main-nav-list">
             <a
               class="main-nav-link"
-              href="https://www.instagram.com/giuseppeleccephotography/"
-              target="_blank"
-              ><ion-icon class="nav-icons" name="logo-tiktok"></ion-icon>
-            </a>
+              href="#biography">Biography</a>
+          </li>
+          <li class="main-nav-list" >
+            <a class="main-nav-link" href="#gallery"
+              >Gallery</a>
           </li>
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#"
-              ><ion-icon class="nav-icons" name="logo-instagram"></ion-icon
-            ></a>
-          </li>
-          <li class="main-nav-list">
-            <a class="main-nav-link" href="#"
-              ><ion-icon class="nav-icons" name="logo-facebook"></ion-icon>
+            <a class="main-nav-link" href="#price"
+              >Prices
             </a>
-          </li>
-          <li class="main-nav-list">
-            <a class="main-nav-link" href="#"
-              ><ion-icon class="nav-icons" name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-          <!-- Buttong just for checks -->
-          <!-- <li class="main-nav-list">
-            <btn class="btn" href="#"
-              >Contact</ion-icon>
-          </btn>
-          </li> -->
-        </ul>
+          </li> 
+         </ul> 
       </nav>
+
+
     </header>
+
+    
 
 
     <!-- Main sections -->
@@ -92,8 +87,8 @@
             <h1 class="hero-main-header">See the Flawlessness in <span>You</span>.</h1>
 
             <div class="hero-button-container">
-              <a class="hero-button" href="#">Browse Now &darr;</a>
-              <a class="hero-button hero-main-button" href="#">Contact Me</a>
+              <a class="hero-button" href="#biography">Browse Now &darr;</a>
+              <a class="hero-button hero-main-button" href="#cta">Contact Me</a>
             </div>
 
             <div class="related-container">
@@ -126,10 +121,37 @@
                 </ul>
   
           </div>
+
+                    <!-- sidebar social nav -->
+           <ul class="social-nav-container">
+             <li class="main-nav-list">
+               <a
+               class="main-nav-link"
+               href="https://www.instagram.com/giuseppeleccephotography/"
+               target="_blank"
+               ><ion-icon class="nav-icons" name="logo-instagram"></ion-icon>
+             </a>
+           </li>
+           <li class="main-nav-list">
+             <a class="main-nav-link" href="#"
+             ><ion-icon class="nav-icons" name="logo-tiktok"></ion-icon
+               ></a>
+             </li>
+             <li class="main-nav-list">
+               <a class="main-nav-link" href="#"
+               ><ion-icon class="nav-icons" name="logo-youtube"></ion-icon>
+             </a>
+           </li>
+           <li class="main-nav-list">
+             <a class="main-nav-link" href="#"
+               ><ion-icon class="nav-icons" name="logo-facebook"></ion-icon>
+             </a>
+           </li>
+           </ul>
       </section>
 
       <!-- Biography section -->
-      <section class="section-biography section" id="product">
+      <section class="section-biography section" id="biography">
         <div class="container">
         <div class="header-container ">
           <p class="section-subheader-light">GIUSEPPE LECCE</p>
@@ -189,15 +211,15 @@
       </section>
 
       <!-- Gallery Section -->
-      <section class="section-gallery section grid-column-1">
+      <section class="section-gallery section grid-column-1" id="gallery">
         <div class="container">
         <div class="header-container">
           <p class="section-subheader-dark">GALLERY</p>
           <h2 class="section-header-dark">See For Yourself</h2>
         </div>
 
-        <div class="gallery-main-container">
-          <div class="gallery">
+        <div class="gallery-main-container" >
+          <div class="gallery" id="portrait">
             <h2 class="gallery-header">Portrait Photography</h2>
             
               <div class="gallery-image-container">
@@ -253,7 +275,7 @@
             
           </div>
 
-          <div class="gallery">
+          <div class="gallery" id="event">
             <h2 class="gallery-header">Event Photography</h2>
             <div class="gallery-container">
               <div class="gallery-image-container">
@@ -309,7 +331,7 @@
             </div>
           </div>
 
-          <div class="gallery">
+          <div class="gallery" id="product">
             <h2 class="gallery-header">Product Photography</h2>
             <div class="gallery-container">
               <div class="gallery-image-container">
@@ -369,7 +391,7 @@
       </section>
 
       <!-- Prices section -->
-      <section class="section-price section grid-column-1">
+      <section class="section-price section grid-column-1" id="price">
         <div class="container">
         <div class="header-container-center">
           <!-- <p class="section-subheader-light">PRICE</p> -->
@@ -496,7 +518,7 @@
 
 
       <!-- CTA section -->
-      <section class="cta-section section grid-column-1">
+      <section class="cta-section section grid-column-1" id="cta">
         <div class="cta-container container">
           <h2 class="cta-header">Capture the moment with me and your sensational moments</h2>
           <a class="cta-button" href="mailto: abc@example.com">Contact Me</a>

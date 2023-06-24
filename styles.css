@@ -248,6 +248,27 @@ section:nth-child(even) {
   width: 100%;
 }
 
+/* social nav bar */
+.social-nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  gap: 1.2rem;
+
+  top: 50%;
+  right: 2.4rem;
+  transform: translateY(-50%);
+  background-color: rgb(255, 255, 255, 0.95);
+
+  box-shadow: 0.1rem 0 1rem #000;
+
+  border-radius: 2rem;
+  padding: 2.4rem;
+
+  height: 16rem;
+}
 /* /////////////////////// */
 /* Biography Section */
 /* ////////////////////// */
