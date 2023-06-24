@@ -39,6 +39,7 @@
   padding: 4.8rem;
   max-width: 120rem;
 }
+
 .header-container-center,
 .section-header-light,
 .section-subheader-light,
@@ -119,4 +120,16 @@
 
 .hidden {
   display: none;
+}
+
+.btn-gallery {
+  margin-bottom: 4.8rem;
+}
+/* Accesability */
+
+*:focus {
+  outline: none;
+  /* /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(255, 217, 0, 0.8);
 }
