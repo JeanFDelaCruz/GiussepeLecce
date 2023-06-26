@@ -104,6 +104,7 @@ section:nth-child(even) {
 }
 
 /* Navigation Buttons */
+.main-nav-link,
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
@@ -423,12 +424,12 @@ section:nth-child(even) {
   display: inline-block;
   padding: 4.8rem;
   margin: 0 auto;
-  max-width: 180rem;
+  /* max-width: 180rem; */
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-self: center;
   column-gap: 4.8rem;
