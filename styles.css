@@ -70,12 +70,15 @@ section:nth-child(even) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2.4rem;
+}
+
+.btn-mobile-nav {
+  display: none;
 }
 
 .grid-nav {
   display: grid;
-  grid-column: 1fr 2fr 1fr;
+  grid-column: 1fr 1fr;
 }
 
 .nav-list-container {
@@ -83,6 +86,7 @@ section:nth-child(even) {
   justify-content: space-around;
   align-items: center;
   gap: 6.4rem;
+  padding: 2.4rem;
 }
 
 .main-nav-list {
@@ -96,11 +100,43 @@ section:nth-child(even) {
 }
 
 .logo-container {
-  width: 24rem;
+  max-width: 24rem;
 }
 
 .logo-image {
-  width: 100%;
+  max-width: 100%;
+}
+
+/* mobile button */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+}
+
+.btn-nav-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.btn-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+.nav-open {
+  position: absolute;
+  background: #fff;
+  width: 100vh;
+  height: 100vh;
+  z-index: 999;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
 }
 
 /* Navigation Buttons */
@@ -234,6 +270,7 @@ section:nth-child(even) {
   display: flex;
   justify-content: center;
   align-items: center;
+  list-style: none;
 
   position: relative;
   max-width: 60rem;
@@ -264,6 +301,7 @@ section:nth-child(even) {
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
+  list-style: none;
 }
 
 .hero-list-button:hover,
