@@ -273,9 +273,14 @@ convert pixels to em by 1200px / 16px
 }
 
 /* 920px */
-/* MOBILES */
+/* Tablets */
 
 @media (max-width: 57.5em) {
+  html {
+    /* 8rem */
+    font-size: 50%;
+  }
+
   .btn,
   .btn:link,
   .btn:visited {
@@ -287,24 +292,58 @@ convert pixels to em by 1200px / 16px
 
   /* nav-button */
 
-  .nav-list-container {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
-
   .nav-container .nav-open {
-  }
-
-  .nav-list-container {
-  }
-
-  .main-nav-list {
-    font-size: 1.8rem;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
   }
 
   .btn-mobile-nav {
     display: block;
+  }
+
+  .nav-open .nav-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-list-container {
+    background: rgb(255, 255, 255, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* transform: translateX(100%); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+    /* z-index: 2; */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .nav-list-container {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   .section-header-light {
@@ -336,7 +375,7 @@ convert pixels to em by 1200px / 16px
 
   .main-nav-link:link,
   .main-nav-link:visited {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .hero-button,
@@ -462,4 +501,8 @@ convert pixels to em by 1200px / 16px
   .cta-social-link:visited {
     font-size: 3rem;
   }
+}
+
+/* under 720px */
+@media (max-width: 45em) {
 }
