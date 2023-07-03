@@ -147,6 +147,7 @@ section:nth-child(even) {
   max-width: 140rem;
   height: 85rem;
   padding: 6.4rem;
+  position: relative;
 }
 
 /* hero texts */
@@ -256,9 +257,11 @@ section:nth-child(even) {
   align-items: center;
   list-style: none;
 
-  position: relative;
-  max-width: 60rem;
-  z-index: -1;
+  width: 50rem;
+
+  /* position: absolute;
+  right: 5%;
+  top: 10%; */
 }
 
 .hero-image-list-container {
@@ -268,7 +271,6 @@ section:nth-child(even) {
 }
 
 .hero-slider-images-container {
-  position: absolute;
   max-width: 60rem;
 }
 
