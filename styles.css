@@ -334,6 +334,10 @@ section:nth-child(even) {
   /* background-color: orangered; */
 }
 
+.biography-text-container {
+  display: flex;
+}
+
 .biography-text {
   align-self: center;
   justify-content: center;
@@ -345,7 +349,7 @@ section:nth-child(even) {
 
 .biography-image-container {
   /* max-width: 36rem; */
-  max-width: 32rem;
+  max-width: 24rem;
   background-color: #000;
   justify-self: center;
   align-self: center;
