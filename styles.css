@@ -590,7 +590,7 @@ section:nth-child(even) {
 
 .slider-button,
 .slider-button:link,
-.slier-button:visited {
+.slider-button:visited {
   background-color: #fff;
   border: none;
   cursor: pointer;
