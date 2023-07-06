@@ -143,6 +143,10 @@ convert pixels to em by 1200px / 16px
     gap: 0.8rem;
   }
 
+  .related-text {
+    font-size: 0.8rem;
+  }
+
   /* biography */
 
   .biography-text {
@@ -204,6 +208,10 @@ convert pixels to em by 1200px / 16px
 
   .nav-icons {
     font-size: 2rem;
+  }
+
+  .related-text {
+    font-size: 0.75rem;
   }
 
   /* biography */
@@ -420,6 +428,10 @@ convert pixels to em by 1200px / 16px
 
   .hero-image-container {
     width: 50rem;
+  }
+
+  .related-text {
+    font-size: 0.65rem;
   }
 
   /* biography */
@@ -853,6 +865,12 @@ convert pixels to em by 1200px / 16px
     border: none;
   }
   /* Hero */
+  .hero-button,
+  .hero-button:link,
+  .hero-button:visited {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
 
   /* gallery */
   .gallery-header {
@@ -865,7 +883,7 @@ convert pixels to em by 1200px / 16px
     margin: 0 auto;
   }
   .gallery-image-container {
-    max-width: 40wdrem;
+    max-width: 40rem;
   }
   /* Prices */
   .card-holder {
