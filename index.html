@@ -30,9 +30,11 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-      nomodule
+      type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script type="module" src="script.js"></script>
   </head>
   <body>
 
@@ -41,32 +43,32 @@
 
     <header class="header">
       
-        <a class="logo-container">
-          <img class="logo-image" alt="the photographers name giuseppe lecce" src="Logo/name-1.png" />
+      <nav class="nav-container">
+        <a class="logo-container " href="#">
+          <img class="logo-image" alt="the photographers name giuseppe lecce" src="Logo/name-1.png"  />
         </a>
 
-        <nav class="nav-container">
         <ul class="nav-list-container ">
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#portrait">Portraits</a>
+            <a class="main-nav-link" href="#portrait" id="btn--portraits">Portraits</a>
           </li>
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#event">Events</a>
+            <a class="main-nav-link" href="#event" id="btn--Events">Events</a>
           </li>
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#product">Products</a>
+            <a class="main-nav-link" href="#product" id="btn--Products">Products</a>
           </li>
           <li class="main-nav-list">
             <a
               class="main-nav-link"
-              href="#biography">Biography</a>
+              href="#biography" id="btn--biography">Biography</a>
           </li>
           <li class="main-nav-list" >
-            <a class="main-nav-link" href="#gallery"
+            <a class="main-nav-link" href="#gallery" id="btn--gallery"
               >Gallery</a>
           </li>
           <li class="main-nav-list">
-            <a class="main-nav-link" href="#price"
+            <a class="main-nav-link" href="#price" id="btn--price"
               >Prices
             </a>
           </li> 
@@ -442,7 +444,7 @@
                 </li>
               </ul>
 
-          <button class=" btn price-btn">Get-in Touch</button>
+          <button class=" btn price--btn">Get-in Touch</button>
           </div>
 
           <!-- Card 2 -->
@@ -467,7 +469,7 @@
                 </li>
               </ul>
 
-          <button class="btn price-btn">Get-in Touch</button>
+          <button class="btn price--btn">Get-in Touch</button>
           </div>
         
 
@@ -493,7 +495,7 @@
                 </li>
               </ul>
 
-          <button class=" btn price-btn">Get-in Touch</button>
+          <button class=" btn price--btn">Get-in Touch</button>
           </div>
         </div>
 
@@ -507,7 +509,7 @@
         </button>
 
           
-          <div class="slide hidden">
+          <div class="slide">
             <h2 class="slide-header">Left me speechless</h2>
             <blockquote class="slide-comment"><span class="quotes">"</span> Wow! what a photographer, pictures he's taken are important to my life,
                left me speechless. I highly recommend him for any occasions.</blockquote>
@@ -520,7 +522,7 @@
             <p class="author">- Hakim</p>
           </div>
 
-          <div class="slide">
+          <div class="slide hidden">
             <h2 class="slide-header">Patient and Caring</h2>
             <blockquote class="slide-comment"><span class="quotes">"</span> Great businessman, patient and caring in his delivery, attention to detail,
                very transparent with what he will do and how long it will take, extremely well equipped.</blockquote>
