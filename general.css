@@ -1,3 +1,9 @@
+/* General Elements */
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 /* General Button design */
 
 .btn,
@@ -119,7 +125,13 @@
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Lazy Images */
+.lazy-img {
+  filter: blur(20px);
 }
 
 .btn-gallery {

@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="description" content="Giuseppe Lecce is a London based photographer that is suitable to hire for any occasions; portraits, wedding, party, events and consumer product photography. Giuseppe provides great care on his delivery for your memorable moments at a LOW-COST price.">
+    <meta name="keywords" content="wedding photography, portrait photography, london photographer, low-price photographer, giuseppe lecce photography, giuseppe lecce, giuseppe">
+    <meta name="author" content="Giuseppe Lecce">
+    
     <title>Giuseppe Lecce</title>
 
-    <link rel="icon" type="image/x-icon" href="Logo/logo-5.jpg" />
+
+
+    <link rel="icon" type="image/x-icon" href="Logo/fav-icon.png" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
@@ -34,7 +40,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <script type="module" src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
 
@@ -44,11 +50,11 @@
     <header class="header">
       
       <nav class="nav-container">
-        <a class="logo-container " href="#">
+        <div class="logo-container ">
           <img class="logo-image" alt="the photographers name giuseppe lecce" src="Logo/name-1.png"  />
-        </a>
+        </div>
 
-        <ul class="nav-list-container ">
+        <ul class="nav-list-container">
           <li class="main-nav-list">
             <a class="main-nav-link" href="#portrait" id="btn--portraits">Portraits</a>
           </li>
@@ -109,9 +115,9 @@
             <div class="related-container">
               <h2 class="hero-subheader">Browse Through</h2>
               <ul class="hero-list-container">
-                <li class="hero-lists"><button class="hero-list-button"><img class="related-image" alt="A woman posing infront of a building in beige clothing" src="Hero pictures/related-hero/related-1.jpg"><p class="related-text">Portrait Photography</p></button></li>
-                <li class="hero-lists"><button class="hero-list-button"><img class="related-image" alt="A man doing a hand stand and crowd looking at him" src="Hero pictures/related-hero/related-2.jpg"><p class="related-text">Event Photography</p></button></li>
-                <li class="hero-lists"><button class="hero-list-button"><img class="related-image" alt="Clear liquid dripping into an electric cigarette" src="Hero pictures/related-hero/related-3.jpg"><p class="related-text">Product Photography</p></button></li>
+                <li class="hero-lists hero--active" data-list="1"><button class="hero-list-button"><img class="related-image" alt="A woman posing infront of a building in beige clothing" src="Hero pictures/related-hero/related-1.jpg"><p class="related-text">Portrait Photography</p></button></li>
+                <li class="hero-lists" data-list="2"><button class="hero-list-button"><img class="related-image" alt="A man doing a hand stand and crowd looking at him" src="Hero pictures/related-hero/related-2.jpg"><p class="related-text">Event Photography</p></button></li>
+                <li class="hero-lists" data-list="3"><button class="hero-list-button"><img class="related-image" alt="Clear liquid dripping into an electric cigarette" src="Hero pictures/related-hero/related-3.jpg"><p class="related-text">Product Photography</p></button></li>
               </ul>
             </div>
           </div>
@@ -120,18 +126,18 @@
           <ul class="hero-image-container">
 
             <!-- Hero image 1 -->
-                <li class="hero-slider-images-container">
+                <li class="hero-slider-images-container hero-slider--1 hero-slider-images--active" >
                   <img class="hero-image" alt="A woman posing infront of a building in beige clothing" src="Hero pictures/hero-img-1.jpg" />
                 </li>
               
             <!-- Hero image 2 -->
-                  <li class="hero-slider-images-container">
-                    <img class="hero-image hidden" alt="A man doing a hand stand and crowd looking at him" src="Hero pictures/hero-img-2.jpg" />
+                  <li class="hero-slider-images-container hero-slider--2 " >
+                    <img class="hero-image" alt="A man doing a hand stand and crowd looking at him" src="Hero pictures/hero-img-2.jpg" />
                   </li>
 
             <!-- Hero image 3 -->
-                  <li class="hero-slider-images-container">
-                    <img class="hero-image hidden" alt="Clear liquid dripping into an electric cigarette" src="Hero pictures/hero-img-3.jpg" />
+                  <li class="hero-slider-images-container hero-slider--3" >
+                    <img class="hero-image" alt="Clear liquid dripping into an electric cigarette" src="Hero pictures/hero-img-3.jpg" />
                   </li>
                 </ul>
   
@@ -149,12 +155,12 @@
              </a>
            </li>
            <li class="main-nav-list">
-             <a class="main-nav-link" href="#" name="small-button-for-tiktok-socials"
-             ><ion-icon class="nav-icons" alt="a small logo of tiktok" name="logo-tiktok"></ion-icon
+             <a class="main-nav-link" href="https://www.tiktok.com/@italipino_" target="_blank" name="small-button-for-tiktok-socials"
+             ><ion-icon class="nav-icons"  alt="a small logo of tiktok" name="logo-tiktok"></ion-icon
                ></a>
              </li>
              <li class="main-nav-list">
-               <a class="main-nav-link" href="#" name="small-button-for-youtube-socials"
+               <a class="main-nav-link" href="https://www.youtube.com/channel/UCmgOGiZawm0DEandcjGjPKg" target="_blank" name="small-button-for-youtube-socials"
                ><ion-icon class="nav-icons" alt="a small logo of youtube" name="logo-youtube"></ion-icon>
              </a>
            </li>
@@ -241,171 +247,192 @@
           <h2 class="section-header-dark">See For Yourself</h2>
         </div>
 
-        <div class="gallery-main-container" >
-          <div class="gallery" id="portrait">
+        <div class="gallery-main-container" id="portrait">
+          <div class="gallery">
             <h2 class="gallery-header">Portrait Photography</h2>
             
-              <div class="gallery-image-container">
+             
+              <div class="gallery-image-container" id="gallery-portrait">
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Portrait photography/portrait-1.jpg"
+                    class="gallery-image lazy-img"
+                    src="Portrait photography/portrait-1-lazy.jpg"
+                    data-src="Portrait photography/portrait-1.jpg"
                     alt="A woman standing in between bushes"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Portrait photography/portrait-2.jpg"
+                    class="gallery-image lazy-img"
+                    src="Portrait photography/portrait-2-lazy.jpg"
+                    data-src="Portrait photography/portrait-2.jpg"
                     alt="a woman leaning on a wall and another woman leaning on the other woman in fashionable dresses"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Portrait photography/portrait-3.jpg"
+                    class="gallery-image lazy-img"
+                    src="Portrait photography/portrait-3-lazy.jpg"
+                    data-src="Portrait photography/portrait-3.jpg"
                     alt="woman looking at christmas lights with blurred red and silver background"
                   />
                 </div>
 
-                <div class="image-holder">
+                <div class="image-holder ">
                   <img
-                    class="gallery-image"
-                    src="Portrait photography/portrait-4.jpg"
+                    class="gallery-image lazy-img"
+                    src="Portrait photography/portrait-4-lazy.jpg"
+                    data-src="Portrait photography/portrait-4.jpg"
                     alt="Portrait of a woman in pink jacket with neon lights"
                   />
                 </div>
 
-                <div class="image-holder">
+                <div class="image-holder ">
                   <img
-                    class="gallery-image"
-                    src="Portrait photography/portrait-5.jpg"
+                    class="gallery-image lazy-img"
+                    src="Portrait photography/portrait-5-lazy.jpg"
+                    data-src="Portrait photography/portrait-5.jpg"
                     alt="A woman posing infront of a building in beige clothing"
                   />
                 </div>
 
-                <div class="image-holder">
+                <div class="image-holder ">
                   <img
-                    class="gallery-image"
-                    src="Portrait photography/portrait-6.jpg"
+                    class="gallery-image lazy-img"
+                    src="Portrait photography/portrait-6-lazy.jpg"
+                    data-src="Portrait photography/portrait-6.jpg"
                     alt="Woman in blue blouse with tatoos and a finger on her lips"
                   />
                 </div>
-                <button class="btn-gallery">Load More</button>
+                
+                <button class="btn-gallery btn--portrait">Load More</button>
+
               </div>
             
           </div>
 
           <div class="gallery" id="event">
             <h2 class="gallery-header">Event Photography</h2>
-            <div class="gallery-container">
-              <div class="gallery-image-container">
+            <div class="gallery-container" >
+              <div class="gallery-image-container" id="gallery-events">
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Event Photography/event-1.jpg"
+                    class="gallery-image lazy-img"
+                    src="Event Photography/event-1-lazy.jpg"
+                    data-src="Event Photography/event-1.jpg"
                     alt="A woman dancing on stage with a few people watching"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Event Photography/event-2.jpg"
-                    alt="A guy dancing on stage floowed by a rival dancer watching close by"
+                    class="gallery-image lazy-img"
+                    src="Event Photography/event-2-lazy.jpg"
+                    data-src="Event Photography/event-2.jpg"
+                    alt="A guy dancing on stage followed by a rival dancer watching close by"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Event Photography/event-3.jpg"
+                    class="gallery-image lazy-img"
+                    src="Event Photography/event-3-lazy.jpg"
+                    data-src="Event Photography/event-3.jpg"
                     alt="Guy doing a hand stand"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Event Photography/event-4.jpg"
+                    class="gallery-image lazy-img"
+                    src="Event Photography/event-4-lazy.jpg"
+                    data-src="Event Photography/event-4.jpg"
                     alt="Guy break dancing in the middle of spectators and rival dancers standing close by"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Event Photography/event-5.jpg"
+                    class="gallery-image lazy-img"
+                    src="Event Photography/event-5-lazy.jpg"
+                    data-src="Event Photography/event-5.jpg"
                     alt="A group of presenters holding a microphones and in the background a few people sitting down"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Event Photography/event-6.jpg"
+                    class="gallery-image lazy-img"
+                    src="Event Photography/event-6-lazy.jpg"
+                    data-src="Event Photography/event-6.jpg"
                     alt="an announcer talking to a man holding a trophy"
                   />
                 </div>
-                <button class="btn-gallery">Load More</button>
+                <button class="btn-gallery btn--events">Load More</button>
               </div>
             </div>
           </div>
 
-          <div class="gallery" id="product">
+          <div class="gallery " id="product">
             <h2 class="gallery-header">Product Photography</h2>
-            <div class="gallery-container">
-              <div class="gallery-image-container">
+            <div class="gallery-container" >
+              <div class="gallery-image-container product" id="gallery-products">
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Product Photography/product-1.jpg"
+                    class="gallery-image lazy-img"
+                    src="Product Photography/product-1-lazy.jpg"
+                    data-src="Product Photography/product-1.jpg"
                     alt="Clear liquid dripping into an electric cigarette"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Product Photography/product-2.jpg"
+                    class="gallery-image lazy-img"
+                    src="Product Photography/product-2-lazy.jpg"
+                    data-src="Product Photography/product-2.jpg"
                     alt="couple of electric cigarette coil floating in the air"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Product Photography/product-3.jpg"
+                    class="gallery-image lazy-img"
+                    src="Product Photography/product-3-lazy.jpg"
+                    data-src="Product Photography/product-3.jpg"
                     alt="a galaxy themed electric cigarette with a galaxy like shadow"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Product Photography/product-4.jpg"
+                    class="gallery-image lazy-img"
+                    src="Product Photography/product-4-lazy.jpg"
+                    data-src="Product Photography/product-4.jpg"
                     alt="A set of electric cigarette liquids placed in a row next to each other"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Product Photography/product-5.jpg"
+                    class="gallery-image lazy-img"
+                    src="Product Photography/product-5-lazy.jpg"
+                    data-src="Product Photography/product-5.jpg"
                     alt="electric cigarette liquid on a painted grass"
                   />
                 </div>
 
                 <div class="image-holder">
                   <img
-                    class="gallery-image"
-                    src="Product Photography/product-6.jpg"
+                    class="gallery-image lazy-img"
+                    src="Product Photography/product-6-lazy.jpg"
+                    data-src="Product Photography/product-6.jpg"
                     alt="red and black electric cigarette standing on the edge of a board"
                   />
                 </div>
-                <button class="btn-gallery">Load More</button>
+                <button class="btn-gallery btn--product">Load More</button>
               </div>
             </div>
           </div>
@@ -500,7 +527,7 @@
         </div>
 
         <div class="slider">
-          <button class="slider-button button-next" name="arrow-button-next">
+          <button class="slider-button button--next" name="arrow-button-next">
             <ion-icon
             class="slider-testimonial-icon"
             alt="arrow pointing right"
@@ -509,28 +536,28 @@
         </button>
 
           
-          <div class="slide">
-            <h2 class="slide-header">Left me speechless</h2>
-            <blockquote class="slide-comment"><span class="quotes">"</span> Wow! what a photographer, pictures he's taken are important to my life,
+          <div class="slide slide--1 slide--active" data-slide="1">
+            <h2 class="slide-header ">Left me speechless</h2>
+            <blockquote class="slide-comment "><span class="quotes">"</span> Wow! what a photographer, pictures he's taken are important to my life,
                left me speechless. I highly recommend him for any occasions.</blockquote>
-            <p class="author">- Rajaa</p>
+            <address class="author">- Rajaa</address>
           </div>
 
-          <div class="slide hidden">
+          <div class="slide slide--2 " data-slide="2">
             <h2 class="slide-header">Definitely recommended</h2>
             <blockquote class="slide-comment"><span class="quotes">"</span> Amazing photography and edits!! Definitely recommended.</blockquote>
-            <p class="author">- Hakim</p>
+            <address class="author">- Hakim</address>
           </div>
 
-          <div class="slide hidden">
+          <div class="slide slide--3 " data-slide="3">
             <h2 class="slide-header">Patient and Caring</h2>
             <blockquote class="slide-comment"><span class="quotes">"</span> Great businessman, patient and caring in his delivery, attention to detail,
                very transparent with what he will do and how long it will take, extremely well equipped.</blockquote>
-            <p class="author">- Warren</p>
+            <address class="author">- Warren</address>
           </div>
 
 
-          <button class="slider-button button-prev" name="arrow-button-previous"><ion-icon
+          <button class="slider-button button--prev" name="arrow-button-previous"><ion-icon
               class="slider-testimonial-icon"
               alt="arrow pointing left"
               name="arrow-back-outline"
@@ -545,13 +572,13 @@
       <section class="cta-section section grid-column-1" id="cta">
         <div class="cta-container container">
           <h2 class="cta-header">Capture the moment with me and your sensational moments</h2>
-          <a class="cta-button" href="mailto: abc@example.com">Contact Me</a>
+          <a class="cta-button" href="mailto: giuseppeleccephotography@gmail.com">Contact Me</a>
           <ul class="cta-social-container">
             <!-- <li class="cta-socials"><ion-icon class="cta-icons" name="mail-open-outline"></ion-icon></li> -->
-            <li class="cta-socials"><a class="cta-social-link" href="#" name="big-button-for-instagram-socials"><ion-icon class="cta-icons" alt="Big logo of instagram" name="logo-instagram"></ion-icon></a></ion-icon></li>
-            <li class="cta-socials"><a class="cta-social-link" href="#" name="big-button-for-tiktok-socials"><ion-icon class="cta-icons" alt="Big logo of tiktok" name="logo-tiktok"></ion-icon></a></ion-icon></li>
-            <li class="cta-socials"><a class="cta-social-link" href="#" name="big-button-for-youtube-socials"><ion-icon class="cta-icons" alt="Big logo of youtube" name="logo-youtube"></ion-icon></a></ion-icon></li>
-            <li class="cta-socials"><a class="cta-social-link" href="#" name="big-button-for-facebook-socials"><ion-icon class="cta-icons" alt="Big logo of facebook"name="logo-facebook"></ion-icon></a></ion-icon></li>
+            <li class="cta-socials"><a class="cta-social-link" href="https://www.instagram.com/giuseppeleccephotography/" name="big-button-for-instagram-socials" target="_blank"><ion-icon class="cta-icons" alt="Big logo of instagram" name="logo-instagram"></ion-icon></a></ion-icon></li>
+            <li class="cta-socials"><a class="cta-social-link" href="https://www.tiktok.com/@italipino_" name="big-button-for-tiktok-socials" target="_blank"><ion-icon class="cta-icons" alt="Big logo of tiktok" name="logo-tiktok"></ion-icon></a></ion-icon></li>
+            <li class="cta-socials"><a class="cta-social-link" href="https://www.youtube.com/channel/UCmgOGiZawm0DEandcjGjPKg" name="big-button-for-youtube-socials"><ion-icon class="cta-icons" alt="Big logo of youtube" name="logo-youtube"></ion-icon></a></ion-icon></li>
+            <li class="cta-socials"><a class="cta-social-link" href="https://www.facebook.com/giuseppeleccephotography" name="big-button-for-facebook-socials" target="_blank"><ion-icon class="cta-icons" alt="Big logo of facebook"name="logo-facebook"></ion-icon></a></ion-icon></li>
           </ul>
         </div>
         </section>
@@ -568,5 +595,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal View -->
+    <div class="modal">
+      <span class="close-modal"><ion-icon name="close-outline"></ion-icon></span>
+      <div class="modal-image-container">
+        <img id="modal-image"> 
+      </div>
+    </div>
   </body>
 </html>
