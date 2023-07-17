@@ -216,7 +216,11 @@ convert pixels to em by 1200px / 16px
 
   /* biography */
   .biography-text {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  .biography-text-container {
+    flex-direction: column;
   }
 
   /* gallery */
@@ -432,7 +436,7 @@ convert pixels to em by 1200px / 16px
   }
 
   .nav-icons {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .hero-image-container {
@@ -445,7 +449,7 @@ convert pixels to em by 1200px / 16px
 
   /* biography */
   .biography-text {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   /* gallery */
@@ -499,8 +503,8 @@ convert pixels to em by 1200px / 16px
   }
 
   .card-holder {
-    width: 22rem;
-    height: 32rem;
+    width: 24rem;
+    height: 34rem;
   }
 
   .slider {
@@ -512,8 +516,8 @@ convert pixels to em by 1200px / 16px
   .ribbon {
     font-size: 0.9rem;
     width: 19rem;
-    top: 7%;
-    right: -28%;
+    top: 6%;
+    right: -26%;
   }
   .price {
     font-size: 1.8rem;
@@ -564,7 +568,7 @@ convert pixels to em by 1200px / 16px
 
   /* social nav */
   .nav-icons {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   /* Hero section */
@@ -613,6 +617,8 @@ convert pixels to em by 1200px / 16px
     padding: 0;
   }
 
+  /* Biography */
+
   /* Gallery Section */
   .gallery-header {
     font-size: 3.4rem;
@@ -647,15 +653,15 @@ convert pixels to em by 1200px / 16px
 
   .card-holder {
     margin: 0 auto;
-    width: 24rem;
-    height: 34rem;
+    width: 26rem;
+    height: 36rem;
   }
 
   .ribbon {
     font-size: 1rem;
     width: 19rem;
     top: 6%;
-    right: -25%;
+    right: -24%;
   }
 
   .card-holder:last-child {
@@ -713,11 +719,6 @@ convert pixels to em by 1200px / 16px
     gap: 20rem;
   }
 
-  /* Biography */
-  .biography-text-container {
-    flex-direction: column;
-  }
-
   /* Gallery */
   .gallery-image-container {
     grid-template-columns: 1fr;
@@ -767,7 +768,7 @@ convert pixels to em by 1200px / 16px
     align-items: center;
 
     position: absolute;
-    top: 5%;
+    top: 6%;
     right: -25%;
 
     transform: rotate(45deg);
@@ -812,7 +813,7 @@ convert pixels to em by 1200px / 16px
   }
 
   .slider {
-    width: 28rem;
+    width: 36rem;
     height: 34rem;
   }
 
@@ -837,7 +838,7 @@ convert pixels to em by 1200px / 16px
 
   .slide-comment {
     line-height: 2.6rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .button-next {
