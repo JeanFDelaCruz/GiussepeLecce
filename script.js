@@ -65,7 +65,7 @@
   headerObserver.observe(header);
 
   ///////////////////////////////////
-
+  /*
   // Sticky socials //
   const stickySocials = function (entries) {
     const [entry] = entries;
@@ -75,10 +75,10 @@
 
   const ctaObserver = new IntersectionObserver(stickySocials, {
     root: null,
-    threshold: 0,
+    threshold: 0.15,
   });
   ctaObserver.observe(ctaSocials);
-
+  */
   ///////////////////////////////////
 
   // Smooth scroll for navigation //
@@ -246,6 +246,13 @@
     header.classList.toggle("nav-open");
   });
 
+  // mobileButton.addEventListener("click", function (event) {
+  //   if (event.target.closest(".header")) {
+  //     // If the clicked element or any of its parents with the class 'header-child'
+  //     // is found, the condition will be true
+  //     header.classList.remove("nav-open");
+  //   }
+  // });
   ////////////////////////////////////
 
   ///////////////////////////////////
@@ -318,13 +325,16 @@
     },
   };
 
+  /*
   portraitButton.addEventListener("click", function (e) {
+    portraitButton.classList.add("hidden--button");
     e.preventDefault();
 
     // set an empty array for the easier way of getting data into the DOM
     // we iterate over the object that we created container all the image url and alt tags
     // we get the values of the object in which we can iterate over to provide for the html template
     let images = [];
+    const beginningLoad = 6;
     for (const [key, value] of Object.entries(portraitHolder)) {
       images.push({
         imageUrl: value.imageUrl,
@@ -339,7 +349,7 @@
 
     //html is set to an empty "" string so that it can be changed as we iterate over the data and pushes into this array structure
     let html = "";
-    for (let i = 0; i < maxImagesPerLoad; i++) {
+    for (let i = beginningLoad; i < maxImagesPerLoad; i++) {
       //just need to destructure this data here so we get the data we need to insert into the DOM. this is so that for each
       // images available we iterate through to get the html content down there to insert into the gallery container
 
@@ -352,9 +362,9 @@
                   />
                 </div>`;
     }
-    portraitContainer.innerHTML = "";
     portraitContainer.insertAdjacentHTML("beforeend", html);
 
+    
     ///////////////////////////////////
     // Modal //
     ///////////////////////////////////
@@ -386,13 +396,13 @@
       if (e.key === "Escape") closeModalFunction();
     });
   });
-
+  */
   ///////////////////////////////////
   // Load more Events button //
   ///////////////////////////////////
 
   //Selectors//
-
+  /*
   const btnEvents = document.querySelector(".btn--events");
   const eventsContainer = document.getElementById("gallery-events");
 
@@ -482,6 +492,7 @@
 
   btnEvents.addEventListener("click", function (e) {
     e.preventDefault();
+    btnEvents.classList.add("hidden--button");
 
     let images = [];
     for (const [key, value] of Object.entries(eventsHolder)) {
@@ -490,10 +501,10 @@
         altTag: value.altTag,
       });
     }
-
+    const beginningLoad = 6;
     let maxImagesPerLoad = images.length;
     let html = "";
-    for (let i = 0; i < maxImagesPerLoad; i++) {
+    for (let i = beginningLoad; i < maxImagesPerLoad; i++) {
       html += `
                 <div class="image-holder">
                   <img
@@ -505,8 +516,8 @@
 `;
     }
 
-    eventsContainer.innerHTML = "";
     eventsContainer.insertAdjacentHTML("beforeend", html);
+
     ///////////////////////////////////
     // Modal //
     ///////////////////////////////////
@@ -538,7 +549,9 @@
       if (e.key === "Escape") closeModalFunction();
     });
   });
+*/
 
+  /*
   ///////////////////////////////////
   // Load more Products button //
   ///////////////////////////////////
@@ -582,6 +595,7 @@
 
   btnProducts.addEventListener("click", function (e) {
     e.preventDefault();
+    btnProducts.classList.add("hidden--button");
 
     let images = [];
     for (const [key, value] of Object.entries(productHolder)) {
@@ -590,10 +604,10 @@
         altTag: value.altTag,
       });
     }
-
+    const beginningLoad = 6;
     let maxImagesPerLoad = images.length;
     let html = "";
-    for (let i = 0; i < maxImagesPerLoad; i++) {
+    for (let i = beginningLoad; i < maxImagesPerLoad; i++) {
       html += `
                 <div class="image-holder">
                   <img
@@ -602,11 +616,12 @@
                     alt="${images[i].altTag}"
                   />
                 </div>
-`;
+              `;
     }
 
-    productContainer.innerHTML = "";
     productContainer.insertAdjacentHTML("beforeend", html);
+    
+
     ///////////////////////////////////
     // Modal //
     ///////////////////////////////////
@@ -638,6 +653,7 @@
       if (e.key === "Escape") closeModalFunction();
     });
   });
+  */
   ///////////////////////////////////
   // set Current Year //
   ///////////////////////////////////

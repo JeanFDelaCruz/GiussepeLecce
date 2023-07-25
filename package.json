@@ -1,15 +1,16 @@
 {
   "dependencies": {
     "core-js": "^3.31.1",
-    "parcel": "^2.9.3",
     "regenerator-runtime": "^0.13.11"
   },
   "name": "main-giuseppe",
   "version": "1.0.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "",
   "license": "ISC",

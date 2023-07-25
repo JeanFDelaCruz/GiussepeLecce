@@ -137,6 +137,10 @@
 .btn-gallery {
   margin-bottom: 4.8rem;
 }
+
+.hidden--button {
+  display: none;
+}
 /* Accesability */
 
 *:focus {

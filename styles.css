@@ -359,7 +359,7 @@ section:nth-child(even) {
 }
 
 /* social nav bar */
-.sticky.social-nav-container {
+.social-nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -369,7 +369,6 @@ section:nth-child(even) {
 
   top: 50%;
   right: 2.4rem;
-  transform: translateY(-50%);
   background-color: rgb(255, 255, 255, 0.95);
 
   box-shadow: 0.1rem 0 1rem #000;
@@ -450,7 +449,7 @@ section:nth-child(even) {
 
 .gallery-image-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 3.2rem;
